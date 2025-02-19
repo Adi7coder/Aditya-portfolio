@@ -1,9 +1,69 @@
-ol {
-    margin-left: -40px;
-    margin-top: -20px;
-    list-style-position: inside;
-  }
-h1{
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a192f, #172a45);
+    color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: linear-gradient(135deg, #254d43, #0a192f);
+}
+
+nav {
+    position: fixed;
+    left: -190px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: linear-gradient(125deg, #254d43, #092f68);
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+nav:hover {
+    left: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: left;
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #172a45;
+    padding-left: 20px;
+}
+main a {
+    color:linear-gradient(130deg,#64ffda,#172a45) ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+main a:hover {
+    color: #64ffda; 
+    text-decoration: blink 0.3s;
+}
+
+footer {
+    padding: 20px;
+    font-size: 4rem;
+    color: #9eaede;
+}
