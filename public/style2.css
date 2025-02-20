@@ -1,15 +1,32 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Phudu', sans-serif;  
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Phudu', sans-serif;
     background-color: #EDF1D6;
     color: #40513B;
     margin: 0;
     padding: 0;
 }
+header {
+    background: #40513B;
+    color:#EDF1D6;
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
 
 h1, h2, h3, h4 {
-    color: #40513B;
+    color: #ffffff;
     text-align: center;
 }
 
