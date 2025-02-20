@@ -1,69 +1,113 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(115deg, #035da1, #c3ff00);
-    color: white;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --background: #EFE9D5;  
+    --primary: #71BBB2;    
+    --secondary: #497D74;  
+    --accent: #27445D;     
+    --text-dark: #1C1C1C;  
+    --text-light: #ffffff; 
+}
+
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  
 }
 
+
+body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header styling  */
 header {
-    padding: 50px 0;
+    background: var(--accent);
+    color: var(--text-light); 
+    padding: 20px;
+    border-radius: 10px;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 0;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600; 
 }
 
-p {
+header p {
     font-size: 1.2rem;
-    color: linear-gradient(135deg, #254d43, #0a192f);
+    font-weight: 300;  
+    margin-top: 5px;
 }
+
 
 nav {
-    position: fixed;
-    left: -190px;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background: linear-gradient(125deg, #254d43, #092f68);
-    transition: 0.3s;
-    padding-top: 20px;
+    margin-top: 15px;
 }
 
-nav:hover {
-    left: 0;
-}
 
 nav a {
-    display: block;
-    padding: 15px;
-    text-align: left;
-    color: #64ffda;
+    color: var(--primary);
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: 0.3s;
+    font-weight: 400;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+/* eStyle navigation links */
 nav a:hover {
-    background: #172a45;
-    padding-left: 20px;
-}
-main a {
-    color:linear-gradient(130deg,#64ffda,#172a45) ;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    background: var(--secondary);
+    color: var(--text-light);
 }
 
-main a:hover {
-    color: #64ffda; 
-    text-decoration: blink 0.3s;
+
+h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: var(--accent);
 }
+
+
+h3 a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+h3 a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+
+img {
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
 
 footer {
-    padding: 20px;
-    font-size: 4rem;
-    color: #9eaede;
+    margin-top: 90px;
+    padding: 10px;
+    background: var(--text-light);
+    color: var(--accent);
+    border-radius: 10px;
+    font-size: 0.9rem;
 }
